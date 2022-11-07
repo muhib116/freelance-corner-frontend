@@ -1,0 +1,90 @@
+.navOuterContainer{
+    background-color: var(--top-nav-color);
+    font-weight: 300;
+}
+.nav_logo{
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+    object-position: left;
+}
+.navContainer{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+}
+.navContainer nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navContainer nav>:is(a, .dropdown_wrapper)
+{
+    padding: 15px 10px;
+    transition: var(--transition);
+}
+.navContainer nav :is(a:is(:hover, .active), 
+.dropdown_wrapper:is(:hover, .active)>a)
+{
+    color: var(--nav-link-hover);
+}
+
+.navContainer .dropdown_wrapper{
+    position: relative;
+    perspective: 800px;
+}
+.dropdown{
+    position: absolute;
+    top: 100%;
+    width: var(--nav-dropdown-width);
+    background-color: var(--top-nav-color);
+    box-shadow: var(--shadow);
+    border-radius: 0 0 6px 6px;
+    transform-origin: 0 0;
+    transform: rotateX(-90deg);
+    transition: var(--transition);
+    backface-visibility: hidden;
+    max-height: 250px;
+    border-top: 2px solid var(--btn-color);
+}
+.dropdown::before{
+    content: '';
+    position: absolute;
+    left: 8px;
+    bottom: 100%;
+    border: 8px solid;
+    border-color: transparent transparent var(--nav-link-hover);
+}
+
+.dropdown>div{
+    height: 100%;
+    overflow-y: auto;
+    display: grid;
+}
+.dropdown a{
+    padding: 10px 15px;
+}
+.dropdown a+a{
+    border-top: 2px solid #0001;
+}
+.dropdown a:hover{
+    background-color: #f5f5f5;
+}
+.dropdown_wrapper:hover .dropdown{
+    transform: rotateX(0deg);
+}
+
+.bookBtn{
+    background-color: var(--btn-color);
+    border: 1px solid var(--btn-color);
+    color: #fff;
+    padding: 4px 10px !important;
+    transition: var(--transition);
+    border-radius: 4px;
+    font-weight: 400;
+    margin-left: 25px;
+}
+.bookBtn:hover{
+    color: var(--btn-color) !important;
+    background-color: transparent;
+}
