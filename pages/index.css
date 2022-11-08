@@ -10,12 +10,13 @@
     --container-padding: 0 16px;
     --top-nav-color: #ffffff;
     --body-background: #efefef;
-    --nav-link-hover: #04aaf1;
+    --nav-link-hover: #ff4b3d;
     --shadow: 0 2px 4px #0001;
     --transition: 0.3s ease-in-out;
     --nav-dropdown-width: 200px;
     --text-color: #444;
-    --btn-color: #04aaf1;
+    --btn-color: #ff4b3d;
+    --btn-primary-color: #bc473f;
     font-size: 16px;
 }
 
@@ -32,4 +33,11 @@ body{
     max-width: var(--container-width);
     padding: var(--container-padding);
     margin: auto;
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }

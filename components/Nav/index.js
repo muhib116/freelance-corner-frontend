@@ -1,13 +1,14 @@
 import style from './nav.module.css'
+import Image from 'next/image'
+import logo from '../../public/logo.png'
 
 export default function Nav() {
     return (
         <div className={ style.navOuterContainer }>
             <div className={ `${ style.navContainer } container` }>
                 <a href="#">
-                    <img 
-                        className={ style.nav_logo }
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2DkVkL9XWuiNUGKmP2YbMlSTXh2hkX_GUjw&usqp=CAU"
+                    <Image 
+                        src={logo}
                         alt='Logo'
                     />
                 </a>
