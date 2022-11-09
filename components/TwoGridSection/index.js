@@ -8,9 +8,9 @@ export default function TwoGridSection({ reverse }) {
     <div className={ [classes.outerContainer, classes.reverse].join(' ') }>
         <div className={ ['container', classes.innerContainer].join(' ') }>
             <div>
-                <p className={ [classes.subTitle, 'text-sm lowercase'].join(' ') }>this is sub title for long text</p>
-                <h3 className={ [classes.title, 'text-black font-black text-4xl mb-4'].join(' ') }>
-                    <span>Why</span> Choose Us
+                <p className={ [classes.subTitle, 'text-sm lowercase mb-2'].join(' ') }>this is sub title for long text</p>
+                <h3 className={ [classes.title, 'text-black font-black text-5xl mb-4'].join(' ') }>
+                    <span>Best</span> Agency
                 </h3>
                 <p>
                     It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 

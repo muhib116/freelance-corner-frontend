@@ -10,7 +10,7 @@
 */
 :root{
     --fonts:  'Poppins', sans-serif;
-    --title-fonts: 'Playfair Display', serif;
+    --title-fonts: 'Josefin Sans', sans-serif;
 
     --container-width: 1200px;
     --container-padding: 0 16px;
