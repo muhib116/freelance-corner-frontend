@@ -10,6 +10,9 @@
     box-shadow: 0 4px 6px #0003;
     transition: var(--transition);
     user-select: none;
+    display: flex;
+    width: fit-content;
+    gap: 1rem;
 }
 .btn:is(:hover, .active){
     filter: brightness(1.2);

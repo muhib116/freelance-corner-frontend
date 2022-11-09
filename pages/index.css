@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
+/**
+* font family loaded 
+* Josefin Sans', sans-serif
+* 'Poppins', sans-serif
+* 'Playfair Display', serif
+*/
 :root{
     --fonts:  'Poppins', sans-serif;
+    --title-fonts: 'Playfair Display', serif;
+
     --container-width: 1200px;
     --container-padding: 0 16px;
     --top-nav-color: #ffffff;
@@ -14,18 +20,23 @@
     --shadow: 0 2px 4px #0001;
     --transition: 0.3s ease-in-out;
     --nav-dropdown-width: 200px;
-    --text-color: #444;
-    --btn-color: #ff4b3d;
-    --btn-primary-color: #bc473f;
-    font-size: 16px;
+    --text-color: #333;
+    --paragraph-color: #323232;
+    --primary-color: #ff643d;
+    --secondary-color: #eb8a75;
+    --btn-color: #ff643d;
+    --btn-primary-color: #ff643d;
+    --section-padding: 80px;
+    font-size: 17px;
 }
 
 body{
     background-color: var(--body-background);
     font-family: var(--fonts);
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1rem;
-    color: var(--text-color)
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
 .container{
@@ -40,4 +51,12 @@ img{
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+p{
+    color: var(--paragraph-color)
+}
+
+a{
+    color: var(--nav-link-hover);
 }

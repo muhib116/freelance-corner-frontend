@@ -18,10 +18,10 @@ export default function Header() {
         </video>
         <div className={ `${ style.innerContainer } container relative z-10` }>
             <div className={ style.textBox }>
-                <h1 className={ `${ style.title } font-black text-5xl mb-4` }>Award Winning  Digital Service Agency</h1>
+                <h1 className={ `${ style.title } font-black text-4xl mb-4` }>Award Winning  Digital Service Agency</h1>
                 <h2 className={ `${ style.subtitle }` }>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</h2>
                 <div className='flex mt-8 gap-5'>
-                    <Button href='#'>Book Demo</Button>
+                    <Button className={ ['text-white'].join(' ') } href='#'>Book Demo</Button>
                     <Button type='outline'>Our Showcase</Button>
                 </div>
             </div>
