@@ -6,6 +6,7 @@
 .innerContainer{
     display: flex;
     gap: 40px;
+    align-items: center;
 }
 .outerContainer.reverse .innerContainer{
     flex-direction: row-reverse;
@@ -14,12 +15,13 @@
     flex-basis: 100%;
 }
 .image img{
-    height: 70%;
+    height: 400px;
     display: block;
     object-fit: contain;
 }
 
 .title{
+    color: #000;
     font-family: var(--title-fonts);
 }
 .title span{
