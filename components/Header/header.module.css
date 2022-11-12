@@ -31,6 +31,10 @@
     justify-content: space-between;
 }
 
+.subtitle{
+    color: #fff9;
+}
+
 .textBox{
     width: 550px;
     color: #fff9;

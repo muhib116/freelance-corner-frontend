@@ -92,7 +92,7 @@ export default function Services() {
                     data.map(item => (
                         <div className={ [classes.service_item].join(' ') }  key={ Math.random() }>
                             <div className={ classes.img }>
-                                <Image src={ item.src } width="200" height="200" alt="Branding Icon" />
+                                <Image src={ item.src } width="100" height="100" alt="Branding Icon" />
                             </div>
                             <h3 className={ [classes.item_title].join(' ') }>{ item.title }</h3>
                             <p className={ [classes.item_description].join(' ') }>{ item.description }</p>

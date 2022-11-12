@@ -1,0 +1,109 @@
+.outerContainer{
+    background-color: #fff;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    position: relative;
+    overflow: hidden;
+}
+
+.innerContainer{
+    position: relative;
+    z-index: 10;
+}
+
+.title{
+    text-align: center;
+    color: #000;
+    font-family: var(--title-fonts);
+}
+.title span{
+    color: var(--primary-color);
+}
+.subTitle{
+    text-align: center;
+    position: relative;
+    color: #999;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.subTitle::before{
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 5px);
+    transform: translateY(-50%)
+}
+.subTitle::after{
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 5px);
+    transform: translateY(-50%)
+}
+
+.tab_btn_wrapper{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 40px;
+    text-align: center;
+}
+.tab_btn_wrapper .button{
+    cursor: pointer;
+    background-color: #fff;
+    padding: 20px 15px;
+    border-radius: 6px;
+    display: grid;
+    gap: 15px;
+    font-weight: 800;
+    font-family: var(--title-fonts);
+    box-shadow: 0 1px 4px #0002, 0 0 10px #0001;
+    transition: var(--transition);
+    position: relative;
+}
+.tab_btn_wrapper .button::before{
+    content: '';
+    display: block;
+    border: 10px solid;
+    border-color: var(--primary-color) transparent transparent;
+    position: absolute;
+    top: 100%;
+    left: 50px;
+    transition: var(--transition);
+    opacity: 0;
+}
+.tab_btn_wrapper .button:is(.active)::before{
+    opacity: 1;
+}
+.tab_btn_wrapper .button:is(:hover, .active){
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 4px #0002, 0 2px 10px #0002;
+    color: #fff;
+}
+.tab_btn_wrapper img{
+    width: 50px;
+    margin: auto;
+}
+.tab_btn_wrapper p{
+    color: inherit;
+}
+
+
+.tab_data_wrapper{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 50px;
+    margin-top: 40px;
+}
+.tab_title{
+    font-weight: 800;
+    font-family: var(--title-fonts);
+    font-size: 40px;
+}

@@ -1,6 +1,8 @@
 import style from './nav.module.css'
 import Image from 'next/image'
 import logo from '../../public/logo.png'
+import Link from 'next/link';
+
 
 export default function Nav() {
     return (
@@ -13,8 +15,8 @@ export default function Nav() {
                     />
                 </a>
                 <nav className='style.navContainer'>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
+                    <Link href="/">Home</Link>
+                    <a href="">About</a>
                     <a href="#">Contact</a>
                     <div className={ style.dropdown_wrapper }>
                         <a href="#">More</a>

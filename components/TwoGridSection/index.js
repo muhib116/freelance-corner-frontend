@@ -56,7 +56,7 @@ export default function TwoGridSection({ data, isReverse, style }) {
 
             </div>
             <div className={ classes.image }>
-                <Image src={ `/${data.image}` } width='400' height='400' alt={ data.title.replace(/(<([^>]+)>)/ig, '') } />
+                <Image src={ `/${data.image}` } width='550' height='550' alt={ data.title.replace(/(<([^>]+)>)/ig, '') } />
             </div>
         </div>
     </div>
