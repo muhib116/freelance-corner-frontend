@@ -1,0 +1,43 @@
+.outerContainer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--footer-color);
+}
+
+.innerContainer{
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.footer_logo{
+    margin-bottom: 15px;
+    max-width: 160px;
+}
+.footer_description{
+    color: #fff5;
+    font-size: 14px;
+}
+.social_icon_wrapper{
+    color: #fff;
+    font-size: 14px;
+}
+.social_icon{
+    display: flex;
+    gap: 8px;
+}
+.social_icon > *{
+    background-color: #fffc;
+    border-radius: 2px;
+    padding: 3px;
+    transition: var(--transition)
+}
+.social_icon > *:hover{
+    background-color: #fff;
+}
+.social_icon svg{
+    transform: scale(0.7)
+}

@@ -52,6 +52,7 @@ const data = [
         isActive: false
     }
 ]
+
 export default function Services()
 {
     const [activeTab, setActiveTab] = useState({})

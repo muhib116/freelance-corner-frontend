@@ -4,6 +4,7 @@ import TwoGridSection from '../components/TwoGridSection'
 import Services from '../components/Services'
 import WorkingProcess from '../components/WorkingProcess'
 import Portfolio from '../components/Portfolio'
+import Footer from '../components/Footer'
 
 // demo data
 const about = {
@@ -30,6 +31,7 @@ export default function Home() {
       <Services />
       <WorkingProcess />
       <Portfolio />
+      <Footer />
     </>
   )
 }
